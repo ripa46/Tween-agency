@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;500;600;700&family=Roboto+Slab:wght@300;400;600&display=swap');
 :root{
     --white-color:#ffff;
-    --primary-color:#904040;
-    --secondary-color:#cd5c5c;
+    --primary-color:#20e9ac;
+    --secondary-color:#85e913;
     --section-bg-color:#c9c4c4;
     --black-color:rgb(56,54,54);
     --gray-color:#f8e8e8;
-    --border-radius:5px;
+    --border-radius:10px;
     --transition:all 0.5s ease-in-out;
     --border:1px solid #0000;
 
@@ -49,7 +49,7 @@ p{
     font-size: 1.8rem;
 }
 .btn{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 0.8rem 1rem;
     color:var(--white-color) ;
     font-family: inherit;
@@ -58,7 +58,7 @@ p{
     cursor: pointer;
 }
 .btn:hover{
-    background-color: #74c8a8;
+    background-color: #e24d11;
     transition: var(--transition);
 }
 .container{
@@ -66,7 +66,7 @@ p{
     margin: 0 auto;
 }
 nav{
-    background-color: #f7d7d7;
+    background-color: #a6eaf3;
     width: 100%;
     height: calc(10px*8);
     display: grid;
@@ -217,5 +217,165 @@ padding:6rem 0 6rem 0;
     background-color: blue;
 }
 .service-item:nth-child(5){
-    background-color: rgb(238, 179, 70);
+    background-color: rgb(247, 182, 63);
+}
+.work-container{
+    z-index:98;
+    padding: 6rem 0 6rem 0;
+}
+.work-container h3{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.work-grid{
+    display: grid;
+    
+    grid-area: 
+'a1 a2 a3'
+'a1 a5 a3'
+'a4 a5 a3'
+;
+}
+.work-item:nth-child(1){
+    grid-area: a1;
+}
+.work-item:nth-child(2){
+    grid-area: a2;
+}
+.work-item:nth-child(3){
+    grid-area: a3;
+}
+.work-item:nth-child(4){
+    grid-area: a4;
+}
+.work-item:nth-child(5){
+    grid-area: a5;
+}
+
+}
+.work-item img{
+    border-radius: .3rem;
+    transition: all 0.5s;
+    width: 100%;
+    padding: 1rem;
+}
+
+.work-item:hover img{
+    opacity: 1;
+    transition:scale(1.05) ;
+}
+.work-item:hover .work-text-info{
+    filter: blur(2px);
+}
+.work-item{
+    position: relative;
+}
+   
+.work-text-info{
+    background-color: var(--section-bg-color);
+    border-radius: 0.3rem;
+    border-bottom: 5px solid var(--black-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    transition:filter 0.115s;
+
+}
+.work-text-info small{
+    font-size: 0.8rem;
+    display: inline-block;
+    background-color: var(--gray-color);
+    padding: 2px 10px;
+    vertical-align: top;
+    border-radius: 10px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+}
+#section-4{
+    background-image: url('./img/img/maria-stewart-p4tj0g-_aMM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+.pricing-container{
+    z-index: 4;
+    padding: 6rem 0 6rem 0;
+}
+.pricing-heading{
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+}
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.pricing-item{
+    position: relative;
+    background-color:var(--white-color) ;
+    padding: 4rem 2rem;
+}
+.pricing-item:last-child{
+    height: 95%;
+}
+.pricing-head{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid rgb(230, 221, 221);
+
+}
+.pricing-head h5 i{
+    margin-right: 1rem;
+}
+.pricing-body{
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+.pricing-body h5{
+    margin-bottom: 0.5rem;
+}
+.pricing-body ul li{
+    font-size: 1rem;
+    list-style: circle;
+    margin-left: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+.pricing-body h5{
+    font-size: 2rem;
+}
+.pricing-body p{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.pricing-item:after{
+    content:"Recommand Plan";
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    padding: 0.5rem 0.3rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.overlay{
+    background: rgba(128,142,176,0.5);
+    position: absolute;
+    top: 0;
+    right:0 ;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+.overlay .dark-overlay{
+    background: rgba(0,0,0,0.75);
+    z-index: 3;
 }
