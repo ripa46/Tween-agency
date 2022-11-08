@@ -1,0 +1,30 @@
+@media screen and(max-width:1300px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size:2.1rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    
+}
+ @media  screen and(max-width:1200px) {
+    .nav-btn .btn{
+        display: none;
+    }
+    .about-text p:last-child{
+        display: none;
+    }
+    .form-container{
+        width: 70%;
+
+    }
+    .form-item label{
+        font-size: 1rem;
+    }
+    .text-area label{
+        font-size: 1.2rem;
+    }
+ }
