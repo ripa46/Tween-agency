@@ -86,7 +86,7 @@
                 font-size: o.2rem;
             }
             .pricing-grid{
-                grid-template-columns: 1fr;
+                grid-template-columns:1fr 1fr;
                 gap: 5rem;
             }
             .pricing-item:last-child{
@@ -95,7 +95,7 @@
     
         }
     
-        @media screen and (max-width:764px){
+        @media screen and (max-width:768px){
             .nav-links{
                 display: none;  
               }
