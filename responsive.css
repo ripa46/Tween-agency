@@ -42,6 +42,13 @@
             .nav-links{
                 gap:1rem;
             }
+            .about-text{
+              margin-top: 0;
+            }
+            .about-text h3{
+              margin-bottom: 2rem;
+          }
+           
             .service-grid{
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
@@ -85,14 +92,48 @@
             .work-text-info small{
                 font-size: o.2rem;
             }
+    
+            .pricing-item{
+              padding: 3rem 3rem;
+            }
+            .pricing-head{
+              display: flex;
+              justify-content: space-between;
+            }
+            .pricing-head h5{
+              font-size: 1.5rem;
+            }
+            .pricing-head i{
+              margin-right: 0.5rem;
+          }
+            .pricing-body h5{
+              font-size: 1.2rem;
+              margin-bottom: 0.4rem;
+          }
+            .pricing-body ul li{
+              font-size: .8rem;
+              list-style: circle;
+              margin-left: 1.1rem;
+              margin-bottom: 1rem;
+          }
             .pricing-grid{
                 grid-template-columns:1fr 1fr;
-                gap: 5rem;
+                gap: 2rem;
+              
             }
             .pricing-item:last-child{
-                height: 100%;
+              height: 100%;
+          
             }
+            .pricing-item::after{
+              content: "Recommand Plan";
+              font-size: 0.8rem;
     
+          }
+          .pricing-body p{
+            font-size: 1rem;
+            text-align: left;
+        }
         }
     
         @media screen and (max-width:768px){
@@ -143,6 +184,44 @@
                         display: inline-block;
                       }
                     }
+                    @media screen and (max-width:540px){
+                      h5{
+                        font-size:1.5rem ;
+                      }
+                      .pricing-body h5{
+                        font-size: 1rem;
+                      }
+                      .pricing-body p{
+                        font-size:0.8rem
+                      }
+                      .pricing-grid{
+                        grid-template-columns: 1fr;
+                      }
+                      .form-title{
+                        font-size:1.5rem ;
+                      }
+                      .form-btn{
+                        font-size: 1.2rem;
+                      }
+                      
+                      .footer-item h4{
+                        font-size: 2rem;
+                      }
+
+                    }
+                    @media screen and (max-width:400px){
+                      .pricing-item{
+                        padding: 3rem 1rem;
+                      }
+                      .pricing-head h5 i{
+                        margin-right: 0.5rem;
+                      }
+                      .pricing-body{
+                        padding-top: 1rem;
+                        padding-left: 2rem;
+                      }
+                    }
+
         
         
         

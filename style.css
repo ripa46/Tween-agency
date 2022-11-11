@@ -376,6 +376,7 @@ grid-template-columns: repeat(2,1fr);
     padding-left: 3rem;
 
 }
+
 .pricing-body h5{
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -421,7 +422,7 @@ grid-template-columns: repeat(2,1fr);
   }
 
   #section-5{
-    [padding: 6rem 0 6rem 0;]
+    padding: 6rem 0 6rem 0;
   }
   .form-container{
     width: 60%;
@@ -466,7 +467,7 @@ grid-template-columns: repeat(2,1fr);
   .form-btn{
     width: 100%;
     padding: 0.5rem 1rem;
-    font-size: 1.5rem;
+    
     background-color: var(--primary-color);
     font-size: 2rem;
     transition: 0.5s;
